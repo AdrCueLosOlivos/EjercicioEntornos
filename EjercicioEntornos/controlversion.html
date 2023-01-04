@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Control de versiones</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <main>
+
+        <article>
+        <h3>Control de versiones</h3><a name="control" id="control"></a>
+    
+            <p>
+            Vamos a realizar la practica de control de versiones que consite en explicar como realizar comando de git desde la pagina learngitbranching y explicare como he realizado
+            mi parte las cuales son Acelerando 4 y Hasta el origen y mas alla 8.
+    
+            <h3>Acelerando 4</h3><a name="acelera" id="acelera"></a>
+            <p>Lo primero que hay que hacer es comprobar con un git checkout las diferentes ramas que tenemos</p>
+            <p><img src="LEARN/7.png" width="700" height="300">
+            </p>
+            <p>Ahora abrimos C1 en la rama local mediante el comando : git revert HEAD~1</p>
+            <p><img src="LEARN/8.png" width="700" height="300"></p>
+            <p>Volvemos a cerrar el c1 que estaba en la rama local con git reset HEAD~1</p>
+            <p><img src="LEARN/9.png" width="700" height="300"></p>
+            <p>Nos movemos a la rama C2 que es pushed con el comando : git checkout pushed</p>
+            <p><img src="LEARN/10.png" width="700" height="300"></p>
+            <p>Seguimos con hacer un : git revert HEAD~1 , lo que hace es abrir un nuevo commit con el contenido del c1 en la rama pushed </p>
+            <p><img src="LEARN/11.png" width="700" height="300"></p>
+            <p>Quitamos la rama de local que es C3 ya que no va ser util y eso se consigue con : 1 paso "git checkout local " que es para volver a la rama local , 2º paso "git reset Head~1" que asi cerraremos la rama que no vamos a utilizar</p>
+            <p><img src="LEARN/13.png" width="700" height="300"></p>
+            <p>Ya por ultimo volvemos a la rama pushed con otra vez el comando : git checkout pushed , y ya por ultimo se haria el ultimo comando que seria Git revert HEAD </p>
+            <p><img src="LEARN/14.png" width="700" height="300"></p>
+            <h3>Hasta el origen y mas alla 8</h3><a name="Jugadores" id="Jugadores"></a>
+            <small>Esta es el ejercicio segun es planteado , el recuadro rosa es el objetivo a conseguir y una vez conseguido se terminara y habras realizado bien el ejercicio
+            </small>
+            <p>
+        <img src="LEARN2/6.png" width="700" height="300">
+            </p>
+            <p>
+            Paso 1º: Lo primero que hacemos en iniciar el ejercicio , para empezar utilizamos un git pull origin bar:foo -> este comando lo que hace es buscar nuevos cambios del repositorio remoto  y actualizar nuestro repositorio
+            <img src="LEARN2/7.png" width="700" height="300">
+            </p>
+            <p>
+            Paso 2º: El segundo comando que vamos a introducir seria git pull origin main:side -> este comando se usa para descargar los cambios del side para integrarlo en el main de nuestro repositorio local
+            <img src="LEARN2/8.png" width="700" height="300">  
+            </p>
+            <p>
+            por ultimo ya estaria terminado ya que solo serian neceasarios estos 2 comandos y te saldria en pantalla una imagen que te dira que esta bien realizado.
+        </p>
+        <p><img src="LEARN2/9.png" width="700" height="300"></p>
+        </article>
+        </main>
+        </body>
+
+    </html>
